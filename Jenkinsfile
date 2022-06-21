@@ -3,6 +3,9 @@ pipeline {
     environment { 
         SUCCESS_FLAG = false
     }
+    options {
+    	skipDefaultCheckout()
+    }
     stages {
         stage('Checkout') {
             steps {

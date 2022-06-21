@@ -1,0 +1,9 @@
+context: "context1"
+env: "dev"
+projects:
+  - name: "project1"
+    topics:
+      - name: "employee"
+        config:
+          replication.factor: "1"
+          num.partitions: "2"

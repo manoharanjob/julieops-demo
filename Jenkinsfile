@@ -1,11 +1,20 @@
 pipeline {
     agent any
+    environment { 
+        SUCCESS_FLAG = false
+    }
     stages {
-        //stage('Checkout') {
-        //    steps {
-        //        checkout scm
-        //    }
-        //}
+        stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM', 
+    				branches: [[name: '*/develop']], 
+				    doGenerateSubmoduleConfigurations: false, 
+				    extensions: [[$class: 'CleanCheckout']], 
+				    submoduleCfg: [], 
+				    userRemoteConfigs: [[url: 'https://github.com/manoharanjob/julieops-demo']]
+				])
+            }
+        }
         
         stage('Julieops DryRun') {
             steps {
@@ -19,9 +28,12 @@ pipeline {
             }
         }
     }
-    post { 
-        always { 
-            echo 'Successfully applied'
-        }
+    post {
+	    success {
+	    	echo 'Success'
+	    }
+	    failure {
+	    	echo 'Failed'
+	  	}
     }
 }

@@ -4,6 +4,10 @@ projects:
   - name: "project1"
     topics:
       - name: "employee"
+        dataType: "avro"
         config:
           replication.factor: "1"
           num.partitions: "2"
+        schemas:
+          key.schema.file: "schemas/employee-key.avsc"
+          value.schema.file: "schemas/employee-value.avsc"

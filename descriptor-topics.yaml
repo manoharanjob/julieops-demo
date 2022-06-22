@@ -9,5 +9,5 @@ projects:
           replication.factor: "1"
           num.partitions: "2"
         schemas:
-          key.schema.file: "./schemas/employee-key.avsc"
-          value.schema.file: "./schemas/employee-value.avsc"
+          key.schema.file: "schema/employee-key.avsc"
+          value.schema.file: "schema/employee-value.avsc"

@@ -3,10 +3,10 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "emp"
+      - name: "emp2"
         config:
           replication.factor: "1"
           num.partitions: "2"
         schemas:
-          key.schema.file: "./schema/employee-key.json"
-          value.schema.file: "./schema/employee-value.json"
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.json"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.json"

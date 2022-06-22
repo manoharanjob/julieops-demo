@@ -3,11 +3,10 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "employee"
-        dataType: "avro"
+      - name: "emp"
         config:
           replication.factor: "1"
           num.partitions: "2"
         schemas:
-          key.schema.file: "./schema/employee-key.avsc"
-          value.schema.file: "./schema/employee-value.avsc"
+          key.schema.file: "./schema/employee-key.json"
+          value.schema.file: "./schema/employee-value.json"

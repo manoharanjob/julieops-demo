@@ -8,5 +8,13 @@ projects:
           replication.factor: "1"
           num.partitions: "2"
         schemas:
-          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.json"
-          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.json"
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+    connectors:
+      artifacts:
+        - path: "/var/lib/jenkins/workspace/julieops-demo/connector/source-file.json"
+          server: "connect"
+          name: "source-file"
+        - path: "/var/lib/jenkins/workspace/julieops-demo/connector/sink-file.json"
+          server: "connect"
+          name: "sink-file"

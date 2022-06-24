@@ -2,5 +2,5 @@
     "connector.class": "FileStreamSink",
     "tasks.max": "1",
     "file": "/tmp/sink.txt",
-    "topic": "connect-test"
+    "topics": ["connect-test"]
 }

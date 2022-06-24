@@ -1,5 +1,4 @@
 {
-	"name": "source-file-connector",
     "connector.class": "org.apache.kafka.connect.file.FileStreamSourceConnector",
     "tasks.max": "1",
     "file": "/tmp/source.txt",

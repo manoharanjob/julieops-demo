@@ -1,5 +1,4 @@
 {
-	"name": "sink-file-connector",
     "connector.class": "org.apache.kafka.connect.file.FileStreamSinkConnector",
     "tasks.max": "1",
     "file": "/tmp/sink.txt",

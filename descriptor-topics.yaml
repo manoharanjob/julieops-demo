@@ -10,15 +10,8 @@ projects:
         schemas:
           key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
           value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
-      - name: "connect-test"
+      - name: "ssl_test"
         config:
           replication.factor: "1"
           num.partitions: "2"
-    connectors:
-      artifacts:
-        - path: "/var/lib/jenkins/workspace/julieops-demo/connector/source-file.json"
-          server: "connect"
-          name: "source-file"
-        - path: "/var/lib/jenkins/workspace/julieops-demo/connector/sink-file.json"
-          server: "connect"
-          name: "sink-file"
+    

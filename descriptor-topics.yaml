@@ -7,9 +7,6 @@ projects:
         config:
           replication.factor: "1"
           num.partitions: "2"
-        schemas:
-          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
-          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
         producers:
           - principal: "User:CN=example.com,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
       - name: "connect-test"
@@ -26,7 +23,3 @@ projects:
         - path: "/var/lib/jenkins/workspace/julieops-demo/connector/sink-file.json"
           server: "connect"
           name: "sink-file"
-    consumers:
-      - principal: "User:CN=localhost,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
-    producers:
-      - principal: "User:CN=localhost,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"

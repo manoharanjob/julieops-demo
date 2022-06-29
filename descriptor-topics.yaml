@@ -3,12 +3,6 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "employee"
-        config:
-          replication.factor: "1"
-          num.partitions: "2"
-        producers:
-          - principal: "User:CN=example.com,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
       - name: "connect-test"
         config:
           replication.factor: "1"

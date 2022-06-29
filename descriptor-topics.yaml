@@ -14,6 +14,3 @@ projects:
         - path: "/var/lib/jenkins/workspace/julieops-demo/connector/source-file.json"
           server: "connect"
           name: "source-file"
-        - path: "/var/lib/jenkins/workspace/julieops-demo/connector/sink-file.json"
-          server: "connect"
-          name: "sink-file"

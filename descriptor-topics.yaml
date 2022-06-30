@@ -3,14 +3,14 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "connect-test"
+      - name: "employee"
         config:
           replication.factor: "1"
           num.partitions: "2"
-        consumers:
-          - principal: "User:CN=example.com,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
-    connectors:
-      artifacts:
-        - path: "/var/lib/jenkins/workspace/julieops-demo/connector/source-file.json"
-          server: "connect"
-          name: "source-file"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+    consumers:
+      - principal: "User:CN=localhost,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
+    producers:
+      - principal: "User:CN=localhost,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"

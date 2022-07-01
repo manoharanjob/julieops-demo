@@ -3,7 +3,7 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "employee"
+      - name: "employee1"
         config:
           replication.factor: "1"
           num.partitions: "2"

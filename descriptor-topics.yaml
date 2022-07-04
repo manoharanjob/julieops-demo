@@ -12,7 +12,6 @@ projects:
           key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
           value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
       - name: "employee1"
-        plan: "silver"
         config:
           replication.factor: "1"
           num.partitions: "1"

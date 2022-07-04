@@ -2,8 +2,7 @@ plans:
   gold:
     alias: "gold"
     config:
-      retention.hours: "10"
-      max.message.bytes: "7340116"
+      num.partitions: "2"
   silver:
     alias: "silver"
     config:

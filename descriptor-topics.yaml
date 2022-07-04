@@ -3,15 +3,350 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "employee"
-        plan: "gold"
+      - name: "employee1"
         config:
           replication.factor: "1"
-          num.partitions: "4"
+          num.partitions: "1"
         schemas:
           key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
           value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
-      - name: "employee1"
+      - name: "employee2"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee3"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee4"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee5"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee6"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee7"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee8"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee9"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee10"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee11"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee12"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee13"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee14"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee15"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee16"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee17"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee18"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee19"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee20"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee21"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee22"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee23"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee24"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee25"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee26"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee27"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee28"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee29"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee30"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee31"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee32"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee33"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee34"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee35"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee36"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee37"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee38"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee39"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee40"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee41"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee42"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee43"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee44"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee45"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee46"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee47"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee48"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee49"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
+      - name: "employee50"
         config:
           replication.factor: "1"
           num.partitions: "1"

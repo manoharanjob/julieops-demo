@@ -2,7 +2,7 @@ plans:
   gold:
     alias: "gold"
     config:
-      num.partitions: "2"
+      num.partitions: "3"
   silver:
     alias: "silver"
     config:

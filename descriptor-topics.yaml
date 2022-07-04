@@ -7,7 +7,7 @@ projects:
         config:
           replication.factor: "1"
           num.partitions: "2"
-          log.retention.hours: "16"
+          log.retention.ms: 18000000
         schemas:
           key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
           value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"

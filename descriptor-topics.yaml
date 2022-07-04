@@ -3,14 +3,18 @@ env: "dev"
 projects:
   - name: "project1"
     topics:
-      - name: "employee1"
+      - name: "employee"
         config:
           replication.factor: "1"
           num.partitions: "2"
+          log.retention.hours: "16"
         schemas:
           key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
           value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"
-    consumers:
-      - principal: "User:CN=localhost,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
-    producers:
-      - principal: "User:CN=localhost,OU=kafka,O=Marriott,L=Trichy,ST=Tamilnadu,C=IN"
+      - name: "employee1"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+        schemas:
+          key.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-key.avsc"
+          value.schema.file: "/var/lib/jenkins/workspace/julieops-demo/schema/employee-value.avsc"

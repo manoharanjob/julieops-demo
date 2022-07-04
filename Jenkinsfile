@@ -21,13 +21,13 @@ pipeline {
         
         stage('Validate') {
             steps {
-                sh "/opt/julieops/usr/local/julie-ops/bin/julie-ops-cli.sh --clientConfig confluent-kafka.properties --topology descriptor-topics.yaml --dryRun"
+                sh "/opt/julieops/usr/local/julie-ops/bin/julie-ops-cli.sh --clientConfig confluent-kafka.properties --topology descriptor-topics.yaml --plans plans.yaml --dryRun"
             }
         }
         
         stage('Deploy') {
             steps {
-                sh "/opt/julieops/usr/local/julie-ops/bin/julie-ops-cli.sh --clientConfig confluent-kafka.properties --topology descriptor-topics.yaml"
+                sh "/opt/julieops/usr/local/julie-ops/bin/julie-ops-cli.sh --clientConfig confluent-kafka.properties --topology descriptor-topics.yaml --plans plans.yaml"
             }
         }
     }

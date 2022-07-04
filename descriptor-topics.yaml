@@ -1,16 +1,5 @@
 context: "context1"
 env: "dev"
-plans:
-  gold:
-    alias: "gold"
-    config:
-      retention.hours: "10"
-      max.message.bytes: "7340116"
-  silver:
-    alias: "silver"
-    config:
-      retention.ms: "1800000"
-      max.message.bytes: "524294"
 projects:
   - name: "project1"
     topics:
